@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background-image: url("../public/background.jpg");
+  opacity: 0.5;
+  height: 100vh;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  text-align: center;
+  border: 2px solid #1b3a6b;
+  width: 40vw;
+  background-color: #def1ff;
+  border-radius: 8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  margin-top: 10px;
+  font-size: 25px;
+  padding: 5px 30px 5px 30px;
+  border-radius: 3px;
+}
+
+.logo {
+  height: 25vh;
+  width: 35vw;
+  margin-bottom: 10px;
+  background-image: url(../public/genshin_logo.png);
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.input {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.output {
+  height: 40vh;
+}
+
+.results {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  margin-top: 2.5%;
+}
+
+.result {
+  font-size: 20px;
+  text-align: left;
+  line-height: 28px;
+}
+
+input {
+  width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 20px;
 }
